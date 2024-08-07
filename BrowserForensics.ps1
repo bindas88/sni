@@ -11,7 +11,7 @@ if ($browserName -eq "chrome") {
 
 
 
-$url = "https://github.com/obsidianforensics/hindsight/releases/download/v2021.12/hindsight.exe"
+$url = "https://github.com/obsidianforensics/hindsight/releases/download/v2023.03/hindsight.exe"
 $output = "$env:TEMP\hindsight.exe"
 $hindsightOp = "$env:TEMP\browserdump"
 $browserProfile = "$env:LOCALAPPDATA\$browserPath\User Data\Default"
